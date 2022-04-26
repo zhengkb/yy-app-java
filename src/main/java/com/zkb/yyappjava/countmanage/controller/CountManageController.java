@@ -17,4 +17,9 @@ public class CountManageController {
     public CountManageEntity add(@RequestBody CountPacket packet) {
         return countManageService.insertIntoRepository(packet);
     }
+
+    @GetMapping("helloWorld")
+    public String helloWorld() {
+        return "helloWorld";
+    }
 }
